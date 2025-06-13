@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>👋 Halo, Selamat Datang!</h1>
+        <p>Ketik nama kamu di bawah dan dapatkan sapaan.</p>
+        
+        <!-- Dark Mode Checkbox -->
+        <label><input type="checkbox" id="darkModeCheckbox"> Dark Mode</label><br><br>
+
+        <!-- Input Nama dan Tombol -->
+        <input type="text" id="nameInput" placeholder="Masukkan nama...">
+        <button onclick="greetUser()">Sapa Saya</button>
+        
+        <p id="greetingMessage"></p>
+
+        <!-- Pilihan Menu Warmindo -->
+        <h2>Menu Warmindo</h2>
+        <select id="menuSelection">
+            <option value="nasiAyam">Nasi Ayam Penyet</option>
+            <option value="nasiGoreng">Nasi Goreng</option>
+            <option value="nasiMagelangan">Nasi Magelangan</option>
+            <option value="nasiTelor">Nasi Telor Krispy Geprek</option>
+            <option value="indomie">Indomie Special</option>
+            <option value="nasiBakar">Nasi Bakar</option>
+        </select>
+        <button onclick="orderFood()">Pesan Sekarang</button>
+        <p id="orderMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
